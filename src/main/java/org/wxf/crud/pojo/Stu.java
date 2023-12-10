@@ -18,12 +18,15 @@ public class Stu {
     public void setCourses(String[] courses) {
         this.courses = courses;
     }
+
     public void setList(List<String> list) {
         this.list = list;
     }
+
     public void setMaps(Map<String, String> maps) {
         this.maps = maps;
     }
+
     public void setSets(Set<String> sets) {
         this.sets = sets;
     }

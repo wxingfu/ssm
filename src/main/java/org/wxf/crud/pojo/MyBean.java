@@ -9,10 +9,12 @@ public class MyBean implements FactoryBean<Course> {
         course.setCname("Java");
         return course;
     }
+
     @Override
     public Class<?> getObjectType() {
         return null;
     }
+
     @Override
     public boolean isSingleton() {
         return false;

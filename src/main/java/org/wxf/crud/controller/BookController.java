@@ -16,6 +16,10 @@ import java.util.List;
 public class BookController {
 
 
+    @SuppressWarnings("unused")
+    int num = 10;
+    @SuppressWarnings({"unused", "rawTypes"})
+    ArrayList list = new ArrayList();
     @Autowired
     // @Qualifier("bookServiceImpl")
     private BookService bookService;
@@ -26,7 +30,6 @@ public class BookController {
         model.addAttribute("list", list);
         return "allBook";
     }
-
 
     @RequestMapping("/toAddBook")
     public String toAddPaper() {
@@ -62,12 +65,6 @@ public class BookController {
         bookService.deleteBookById(id);
         return "redirect:/book/allBook";
     }
-
-
-    @SuppressWarnings("unused")
-    int num = 10;
-    @SuppressWarnings({"unused", "rawTypes"})
-    ArrayList list = new ArrayList();
 
 
 }
